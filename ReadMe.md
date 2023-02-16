@@ -1,5 +1,6 @@
 # J.A.R.V.I.S AI
-A simple jarvis application made with dialogflow and bunch of other npm libraries. 
+
+A simple jarvis application made with dialogflow and bunch of other npm libraries.
 ( last updated: 2019 )\
 Enjoy! ✌️
 
