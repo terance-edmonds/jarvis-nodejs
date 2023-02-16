@@ -1,0 +1,9 @@
+.env
+node_modules
+credentials/*
+*.pem
+*.p12
+token.json
+tokens.json
+credentials.json
+tests

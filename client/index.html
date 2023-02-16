@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Jarvis" content="width=device-width, initial-scale=1.0">
+
+    <title>Jarvis</title>
+    <!--Jarvis icon-->
+    <link rel="icon" href="resources/jarvis_logo.png">
+    <link rel="stylesheet" href="index.css">
+    <!--Responsive voice-->
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=VokmeZc4"></script><!--api key : ?key=l5tpAdEP-->
+</head>
+<body>
+    <div id="container_overlay">
+        <div id="overlay_button" onclick="SystemInitialize()">Start</div>
+    </div>
+    <div class="container">
+        <div class="player-container">
+            <div id="youtubePlayerInfo">
+                <p id="playerStatus">status</p>
+                <p id="playerTitle">title</p>
+            </div>
+<!--             <button onclick="InfoLayout(true)">on</button>
+            <button onclick="InfoLayout(false)">off</button> -->
+            <!--youtube player-->
+            <div id="player" data-autoplay="1"></div>
+        </div>
+
+        <div  id="center-content">
+            <!--Jarvis main video-->
+            <video id="Jarvis_UI_Video" muted="muted" autoplay loop>
+                <source src="resources/JarvisUI.mp4" type="video/mp4">
+            </video>
+
+            <!--thinking thingy-->
+            <p id="think" class="think textOn"><b>Thinking</b><span id="dot_1"> . </span><span id="dot_2"> . </span><span id="dot_3"> . </span></p>
+
+            <!--connection status-->
+            <p id="connection_status" class="textOn"></p>
+        </div>
+        <input type="text" id='textbox'/>
+        <div id="mute">MUTE</div>
+    </div>
+    <div id="side-content"> <div id="in-side-content"></div> </div>
+    <!--The Script-->
+    <script src="index.js"></script>
+
+</body>
+
+<!--jquery-->
+<script
+    src="http://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+</html>

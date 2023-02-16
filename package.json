@@ -1,0 +1,44 @@
+{
+    "name": "jarvis",
+    "version": "1.0.0",
+    "description": "simple jarvis node app",
+    "main": "server/index.js",
+    "directories": {
+        "test": "tests"
+    },
+    "scripts": {
+        "pretty": "prettier --write \"./**/*.{ts,js,json}\"",
+        "configure-husky": "npx husky install && npx husky add .husky/pre-commit \"npx --no-install lint-staged\"",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "lint-staged": {
+        "**/*.{ts,js,json}": [
+            "prettier --write ."
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/terance-edmonds/jarvis-nodejs.git"
+    },
+    "keywords": [
+        "jarvis",
+        "artificial-intelligence",
+        "nodejs"
+    ],
+    "author": "T.A.Edmonds",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/terance-edmonds/jarvis-nodejs/issues"
+    },
+    "homepage": "https://github.com/terance-edmonds/jarvis-nodejs#readme",
+    "devDependencies": {
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.3",
+        "prettier": "^2.7.1"
+    }
+}
